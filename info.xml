@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<jtlshopplugin>
+    <Name>myplugin</Name>
+    <Description>Test payment plugin jtl</Description>
+    <Author>Me</Author>
+    <URL>http://localhost/</URL>
+    <XMLVersion>101</XMLVersion>
+    <ShopVersion>5.0.0</ShopVersion>
+    <PluginID>myplugin_jtl5</PluginID>
+    <CreateDate>2021-10-12</CreateDate>
+    <Version>1.0.0</Version>
+    <Install>
+        <PaymentMethod>
+            <Method>
+                <Name>MyPayment</Name>
+                <PictureURL>images/my_payment.png</PictureURL>
+                <Sort>1</Sort>
+                <SendMail>1</SendMail>
+                <Provider>Me</Provider>
+                <TSCode>OTHER</TSCode>
+                <PreOrder>0</PreOrder>
+                <Soap>0</Soap>
+                <Curl>1</Curl>
+                <Sockets>0</Sockets>
+                <ClassFile>MyPayment.php</ClassFile>
+                <ClassName>MyPayment</ClassName>
+                <MethodLanguage iso="GER">
+                    <Name>MyPayment</Name>
+                    <ChargeName>EMS</ChargeName>
+                    <InfoText>Bezahlen Sie bequem mit MyPayment.</InfoText>
+                </MethodLanguage>
+                <MethodLanguage iso="ENG">
+                    <Name>MyPayment</Name>
+                    <ChargeName>EMS</ChargeName>
+                    <InfoText>Just info about MyPayment</InfoText>
+                </MethodLanguage>
+            </Method>
+        </PaymentMethod>
+    </Install>
+</jtlshopplugin>
